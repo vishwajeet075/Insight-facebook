@@ -27,19 +27,11 @@ const Profile = ({ image, name }) => {
               <ul className="list-group list-group-flush flex-grow-1">
                 <li className="list-group-item py-3 d-flex align-items-center">
                   <i className="bi bi-envelope me-3 fs-4 text-primary"></i>
-                {/*  <div>
-                    <small className="text-muted">Email</small>
-                    <div className="fw-semibold">shindevishwajeet434@gmail.com</div>
-                  </div>*/}
+             
                 </li>
                 <li className="list-group-item py-3 d-flex align-items-center">
                   <i className="bi bi-telephone me-3 fs-4 text-primary"></i>
-                  {/*
-                  <div>
-                   
-                    <small className="text-muted">Phone</small>
-                    <div className="fw-semibold">(123) 456-7890</div>
-                  </div>*/}
+                  
                 </li>
               </ul>
             </div>

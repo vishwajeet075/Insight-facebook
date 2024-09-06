@@ -21,16 +21,16 @@ const fetchUserInfo = async (accessToken) => {
 
 
 function App() {
-  const [userID, setUserID] = useState(null); // Store the userID instead of name
+  const [userID, setUserID] = useState(null); 
   const [image,setimage]=useState('');
   const [accessToken, setAccessToken] = useState('');
   const [name ,setname]=useState('');
- /* const [email , setemail]=useState('');*/
+ 
  
 
 
 
-  // Success handler after Facebook login
+  
   const handleLoginSuccess = async (response) => {
     console.log("Login Success:", response);
     const {accessToken}=response;
@@ -45,7 +45,7 @@ function App() {
     
   };
 
-  // Failure handler for login
+
   const handleLoginFailure = (error) => {
     console.error("Login Failed:", error);
   };
@@ -63,7 +63,7 @@ function App() {
         </div>
       ) : (
         <>
-        <Profile  image={image}  name={name} /*email={email}*//>
+        <Profile  image={image}  name={name} />
         <FacebookPageMetrics accessToken={accessToken}/>
         </>
 
