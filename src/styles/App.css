@@ -1,0 +1,8 @@
+.box-login{
+    border: 2px solid black;
+    width: 30%;
+    margin-inline: auto;
+    height: 30vh;
+    margin-top: 15%;
+    border-radius: 5px;
+}
