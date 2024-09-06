@@ -12,6 +12,7 @@ const FacebookPageMetrics = ({ accessToken }) => {
 
   useEffect(() => {
     fetchPages();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [accessToken]);
 
   const fetchPages = async () => {
