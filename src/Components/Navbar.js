@@ -38,7 +38,7 @@ export default function Navbar() {
               
               />
               <button className="btn btn-outline-success" type="submit" >
-                Search
+                Search this thing again and again 
               </button>
             </form>
 
