@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 1rem; 
+  }
+  
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; 
+    margin: 0 1rem; 
+    justify-content: center;
+  }
+  
+  .search-bar {
+    flex: 1; 
+    max-width: 500px; 
+  }
+  
+  .sign-up {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem; 
+    border-radius: 5px;
+  }
+  
+  .sign-up img {
+    margin-right: 0.5rem; /* Adds spacing between image and text */
+  }
+  
+  .circle{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color:yellow;
+    color:brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ 

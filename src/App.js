@@ -4,6 +4,7 @@ import axios from 'axios';
 import './styles/App.css';
 import Profile from "./Components/Profile";
 import FacebookPageMetrics from "./Components/FacebookPageMetrics";
+import Navbar from "./Components/Navbar";
 
 
 
@@ -63,6 +64,7 @@ function App() {
         </div>
       ) : (
         <>
+        <Navbar/>
         <Profile  image={image}  name={name} />
         <FacebookPageMetrics accessToken={accessToken}/>
         </>
