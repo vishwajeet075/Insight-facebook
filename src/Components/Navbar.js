@@ -15,7 +15,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <i className="fas fa-bars" ></i>
-        <p>This is companay logo</p>
+        <p>This is companay logg new thing added to test the project jenkins </p>
 
           <button
             className="navbar-toggler"
