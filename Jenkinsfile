@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        nodejs "NodeJS_LTS"  // The name you provided in the configuration
+        nodejs "nodejs_lts"  // The name you provided in the configuration
     }
     stages {
         stage('Checkout Code') {
