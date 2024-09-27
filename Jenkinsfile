@@ -1,13 +1,21 @@
 pipeline {
     agent any
+    tools {
+        nodejs "nodejs_lts"  // The name you provided in the configuration
+    }
     stages {
         stage('Checkout Code') {
             steps {
                 checkout scm
             }
         }
-        stage('Install Dependencies') {
+         stage('Install Dependencies') {
             steps {
+                script {
+                    // Make sure Node.js and npm are available
+                    sh 'node -v'
+                    sh 'npm -v'
+                }
                 sh 'npm install'
             }
         }
