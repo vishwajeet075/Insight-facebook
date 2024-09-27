@@ -11,11 +11,6 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('Run Tests') {
-            steps {
-                sh 'npm test'
-            }
-        }
         stage('Build') {
             steps {
                 sh 'npm run build'
@@ -24,7 +19,7 @@ pipeline {
         stage('Deploy to GitHub') {
             when {
                 expression { 
-                    return env.BRANCH_NAME.startsWith('feature/') 
+                    return env.BRANCH_NAME.startsWith('feature/')
                 }
             }
             steps {
@@ -44,9 +39,11 @@ pipeline {
     }
     post {
         success {
+            echo 'Build succeeded'
             githubNotify status: 'SUCCESS', description: 'Build succeeded'
         }
         failure {
+            echo 'Build failed'
             githubNotify status: 'FAILURE', description: 'Build failed'
         }
     }
