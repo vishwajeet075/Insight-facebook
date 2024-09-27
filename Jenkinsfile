@@ -43,7 +43,7 @@ pipeline {
     post {
         success {
             echo 'Build succeeded'
-            githubNotify status: 'SUCCESS', description: 'Build succeeded'
+          
 
                // Automatically merge feature branch into main branch after successful build
             script {
@@ -69,7 +69,7 @@ pipeline {
         
         failure {
             echo 'Build failed'
-            githubNotify status: 'FAILURE', description: 'Build failed'
+           
         }
     }
 }
