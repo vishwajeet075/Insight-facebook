@@ -38,7 +38,7 @@ export default function Navbar() {
               
               />
               <button className="btn btn-outline-success" type="submit" >
-                Sea job is done by me  properly
+                Sea job is done by now 
               </button>
             </form>
 
